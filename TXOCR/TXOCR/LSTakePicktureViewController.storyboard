@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y1h-c3-BB9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Take Pickture View Controller-->
+        <scene sceneID="ljd-DX-0X9">
+            <objects>
+                <viewController id="y1h-c3-BB9" customClass="LSTakePicktureViewController" customModule="TXOCR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pfs-54-pAR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5M8-pN-QM8">
+                                <rect key="frame" x="171" y="615" width="33" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="拍照"/>
+                                <connections>
+                                    <action selector="takePhotoImageAction:" destination="y1h-c3-BB9" eventType="touchUpInside" id="bnn-Ix-wd1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TuQ-8w-qgu" firstAttribute="bottom" secondItem="5M8-pN-QM8" secondAttribute="bottom" constant="20" id="hD0-k2-FbH"/>
+                            <constraint firstItem="5M8-pN-QM8" firstAttribute="centerX" secondItem="Pfs-54-pAR" secondAttribute="centerX" id="wLv-eg-pKj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TuQ-8w-qgu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JtY-zd-SL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="383" y="-152"/>
+        </scene>
+    </scenes>
+</document>
